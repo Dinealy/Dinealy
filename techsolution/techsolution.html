@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Techsolutions</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Styles de base" />
+
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/Beautiful-Contact-from-animated.css">
+    <link rel="stylesheet" href="assets/css/Navbar-Right-Links-Dark-icons.css">
+    <link rel="stylesheet" href="assets/css/Section-Title.css">
+</head>
+
+<body style="background: #032030; color: #99D7F4; ">
+    
+    <nav class="navbar navbar-light navbar-expand-lg py-3" style="color: #99D7F4;background: #083b56 ;">
+
+        <a href="techsolution.html"><input type="image" id="image" src="logo.png" style="margin-right: 50px; border-radius: 5px;" /> </a>
+
+
+        <div class="container-fluid"><a class="navbar-brand d-flex align-items-center" href="#"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1" style="color: #99D7F4;">
+                <ul class="navbar-nav me-auto" style="float: left;">
+                    <li class="nav-item"><a class="nav-link active" href="#histoire" style="color: #99D7F4;">Notre Histoire&nbsp;</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services" style="color: #99D7F4;">Nos Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#avis" style="color: #99D7F4;">Vos Avis</a></li>
+                    <button class="btn btn-primary" type="button" style="background: #032030;" onclick="redirectToContact()">Contact</button>
+                    <script>
+                        function redirectToContact() {
+                            window.location.href = 'contact.html';
+                        }
+                    </script>        
+                    </ul>
+            </div>
+        </div>
+    </nav>
+   
+    <img src="illustration.png" style="width: 100%; border-bottom-right-radius: 300px; border-bottom-left-radius: 300px;">
+    <!--petite image-->
+
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/Beautiful-Contact-from-animated-script.js"></script>
+    <br><br><br>
+    
+    <h2 style="text-align: center">Ce site est un projet BTS et peut donc contenir des bugs. <br>
+    L'entreprise citée est une entreprise fictive. <br><br><br></h2>
+
+
+     <div class = "histoire" id="histoire" >
+        <h2 style="text-align: center"><b>Notre histoire :</b></h2><br>
+         TechSolutions, une entreprise innovante fondée en 2010 par deux amis d'enfance, Sarah Leroux 
+          et Marc Dupont, a émergé dans le paysage technologique depuis son modeste bureau à 
+            Brive-La-Gaillarde. Initiée par la vision de Sarah, une développeuse exceptionnelle,
+           et le talent artistique de Marc, un designer passionné, l'entreprise a débuté
+          en proposant des solutions de sites web personnalisés, initialement destinées aux petites
+          entreprises locales.<br>
+          <br>
+         Grâce à leur dévouement et à la qualité de leur travail, TechSolutions a rapidement acquis 
+         une réputation enviable, ce qui a stimulé sa croissance et l'a incitée à élargir son éventail de 
+         services. Aujourd'hui, l'entreprise se positionne en tant que pionnière dans le domaine de 
+         l'intelligence artificielle et du big data, déployant des solutions technologiques de pointe 
+         pour répondre aux besoins émergents du marché. <br>
+         <br>
+         Fidèle à ses racines, TechSolutions demeure axée sur la personnalisation, offrant des 
+         solutions sur mesure qui dépassent les attentes de sa clientèle. Forte de son expertise 
+         technique et de sa créativité, l'entreprise continue de repousser les limites de l'innovation,
+          ouvrant la voie à un avenir numérique prometteur.<br>
+          <br>
+
+
+
+
+
+    </div> 
+
+    <br><br><br>
+
+
+    <div class="service" id="services">
+      <h2 style="text-align: center"><b>Nos services :</b></h2><br>
+      <div class="carousel-container">
+          <div class="carousel">
+            <div class="product">
+              <img src="data.png" alt="Produit 1">
+            </div>
+            <div class="product">
+              <img src="site.png" alt="Produit 2">
+            </div>
+            <div class="product">
+              <img src="ai.png" alt="Produit 3">
+            </div>
+          </div>
+      </div>
+  </div>
+
+
+     <br><br><br>
+     <div class = "avis" id="avis">
+
+        <h2 style="text-align: center"><b>Votre avis compte !</b></h2><br>
+
+        <div class="comment-form">
+            <form action="comment.php" method="post">
+              <label for="nom">Nom :</label>
+              <input type="text" id="nom" name="nom" required>
+        
+              <label for="mail">Email:</label>
+              <input type="mail" id="mail" name="mail" required>
+        
+              <label for="commentaire">Commentaire:</label>
+              <textarea id="commentaire" name="commentaire" rows="4" required></textarea>
+        
+              <label for="rating"></label>
+              <div class="rating">
+                <input type="radio" id="star5" name="rating" value="5" required>
+                <label for="star5"></label>
+                <input type="radio" id="star4" name="rating" value="4" required>
+                <label for="star4"></label>
+                <input type="radio" id="star3" name="rating" value="3" required>
+                <label for="star3"></label>
+                <input type="radio" id="star2" name="rating" value="2" required>
+                <label for="star2"></label>
+                <input type="radio" id="star1" name="rating" value="1" required>
+                <label for="star1"></label>
+            </div>
+            
+              <br>
+              <input type ="submit" name = "envoi" value="Envoyer">           
+             </form>
+          </div>
+
+          <h2 style="text-align: center"><b>Commentaires :</b></h2>
+          <div class="espace">
+            <p>John Doe</p>
+            <p><strong>Commentaire:</strong> Service rapide et fiable !</p>
+            <p><strong>Évaluation:</strong> 
+              <span class="rating">
+                <span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+              </span>
+            </p>
+          </div>
+          </div>
+          
+
+
+     <br><br><br>
+     <div class="footer-basic">
+        <footer>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="mention.html">Mention légale</a></li>
+                <li class="list-inline-item"><a href="politique.html">Politique de confidentialité</a></li>
+            </ul>
+            <p class="copyright">TechSolutions © 2023</p>
+                </footer>
+    </div>
+    
+</body>
+
+</html>

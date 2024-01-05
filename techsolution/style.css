@@ -1,0 +1,314 @@
+body {
+    color: #99D7F4;
+    background-color: #032030;
+    line-height: 1.6em;
+    
+  }
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2em;
+  float: right;
+}
+
+.center-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button{
+  size-adjust:90% ;
+  float: right;
+}
+
+/* *//* *//* *//* *//* *//* *//* *//* *//* */
+
+#histoire {
+  margin-left: 150px;
+  margin-right: 150px; 
+}
+
+#service {
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: center;
+
+}
+
+#avis {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+/* *//* *//* *//* *//* *//* *//* *//* *//* */
+
+#confirmation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+
+}
+
+/* *//* *//* *//* *//* *//* *//* *//* *//* */
+
+
+#mention {
+  margin-left: 150px;
+  margin-right: 150px; 
+
+}
+
+
+#politique {
+  margin-left: 150px;
+  margin-right: 150px; }
+
+
+#contact {
+  width: 50%; /* Ajustez la largeur en fonction de vos besoins */
+  margin: 0 auto;
+
+.contact-form {
+  max-width: 200%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #04011d; /* Dark blue border color */
+  border-radius: 10px; /* Rounded corners */
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+}
+
+textarea,
+input {
+  background-color: #083b56;
+  border: 1px solid #001f3f; /* Dark blue border for input elements */
+  border-radius: 5px; /* Rounded corners for input elements */
+  color: #fff; /* Text color for better visibility */
+}
+}
+
+/* Optionally, you can add styles for focus state */
+input:focus,
+textarea:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #005cbf; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(0, 92, 191, 0.5); /* Add a subtle box shadow on focus */
+}
+
+
+  /* *//* *//* *//* BOUTON SUBMIT*//* *//* *//* *//* *//* */
+  
+  input[type="submit"] {
+    background-color: #083b56; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    padding: 10px 20px; /* Espacement à l'intérieur du bouton */
+    border: none; /* Supprime la bordure par défaut */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur de type main pour indiquer que c'est un élément cliquable */
+    font-size: 16px; /* Taille de la police */
+  }
+
+
+
+/* *//* *//* *//* PIED DE PAGE*//* *//* *//* *//* *//* */
+
+.footer-basic {
+  padding:10px 0;
+  background-color:#083b56;
+  color:#99D7F4;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+
+/* *//* *//* *//*ESPACE COMMENTAIRE *//* *//* *//* *//* *//* */
+
+.comment-form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+textarea,
+input {
+    background-color: #083b56;
+}
+
+.rating {
+  display: flex;
+  margin-top: 10px;
+}
+
+.rating input {
+  display: none;
+}
+.rating label {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  background-color: transparent; /* Couleur de fond transparente pour les étoiles non cochées */
+  margin-right: 5px;
+  border-radius: 50%; /* Rendre les étoiles arrondies */
+
+}
+
+.rating label:before {
+  content: '\2606';
+  font-size: 20px;
+  color: #ccc; /* Couleur des étoiles non cochées */
+  display: block;
+  text-align: center;
+  line-height: 25px;
+}
+
+.rating input:checked ~ label {
+  background-color: #ffd60a; /* Couleur de fond pour les étoiles cochées */
+}
+
+.rating input:checked ~ label:before {
+  color: #fff; /* Couleur des étoiles cochées */
+}
+
+/* *//* *//* *//*BOUTON SUBMIT *//* *//* *//* *//* *//* */
+
+input[type="submit"] {
+  background-color: #083b56; /* Couleur de fond */
+  color: white; /* Couleur du texte */
+  padding: 10px 20px; /* Espacement à l'intérieur du bouton */
+  border: none; /* Supprime la bordure par défaut */
+  border-radius: 5px; /* Coins arrondis */
+  cursor: pointer; /* Curseur de type main pour indiquer que c'est un élément cliquable */
+  font-size: 16px; /* Taille de la police */
+}
+
+/* *//* *//* *//*Affichage commentaire *//* *//* *//* *//* *//* */
+.espace {
+  background-color: #1a1a2e;
+  color: #fff;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+  max-width: 400px;
+  margin: 20px auto; /* Centre la boîte horizontalement avec une marge en haut et en bas */
+}
+
+.espace p {
+  margin-bottom: 10px;
+}
+
+.espace strong {
+  font-weight: bold;
+}
+
+.espace p strong {
+  font-size: 90%;
+}
+
+.espace p:last-child {
+  display: flex;
+  align-items: center;
+}
+
+.espace p:last-child strong {
+  margin-right: 10px;
+}
+
+.espace p:last-child .rating {
+  display: inline-block;
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+
+.espace p:last-child .rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+  color: #FFD700; /* Définir la couleur par défaut */
+}
+
+
+
+
+/* *//* *//* *//*CARROUSSEL SERVICE *//* *//* *//* *//* *//* */
+
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center; /* Centrer le conteneur du carrousel */
+}
+
+.carousel {
+  display: inline-flex; /* Utiliser inline-flex pour le centrage */
+}
+
+.product {
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  margin-right: 20px; /* Augmenter l'espacement entre les images */
+  transition: filter 0.3s ease; /* Transition en douceur pour l'effet au survol */
+}
+
+.product:last-child {
+  margin-right: 0;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+.product:hover {
+  filter: brightness(60%); /* Assombrir l'image au survol */
+}
